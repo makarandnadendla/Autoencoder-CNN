@@ -14,7 +14,9 @@ The motivation behind this project, was simply to explore what autoencoders can 
     
 Autoencoders are a popular algorithm for beginner deep learning practitioners because the idea is easy to understand, and it has a aesthetic appeal to it where doing something so simple might yield benefits to a classification algorithm in question. 
     
-However, as with any other hypothesis, we must evaluate it without bias, using the most important performance metrics (precision, accuracy, f-score, confusion matrix) to determine the efficacy. Mechanistic speculation of the algorithm cannot lead to more objective conclusions, which is why we are testing the algorithm today.
+However, as with any other hypothesis, we must evaluate it without bias, using the most relevant performance metrics (precision, accuracy, f-score, confusion matrix) in proper context to determine the efficacy. 
+
+Mechanistic speculation of the algorithm, by itself, cannot lead to more objective conclusions, which is why we are testing the algorithm today.
     
  
 ## Table Of Contents
@@ -24,4 +26,4 @@ However, as with any other hypothesis, we must evaluate it without bias, using t
  - Tests
  - Code Example
  - References
- - Further Avenues to possibly pursue with this code
+ - What's Next?
