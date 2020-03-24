@@ -121,7 +121,7 @@ Each of the respective models' classes are in Models/modelcollection/nn/conv if 
 python convautoencoder_cifar10.py
 ```
 <details>
-<summary>Optional Arguments</summary>
+<summary>Optional Arguments</summary><br>
 
 
 - --samples
@@ -151,7 +151,7 @@ python convautoencoder_cifar10.py
 python convautoencoder_minivggnet_cifar10.py
 ```
 <details>
-<summary>Optional Arguments</summary>
+<summary>Optional Arguments</summary><br>
 
 
 - --output
@@ -176,7 +176,7 @@ python convautoencoder_minivggnet_cifar10.py
 python convautoencoder_shallownet_cifar10.py
 ```
 <details>
-<summary>Optional Arguments</summary>
+<summary>Optional Arguments</summary><br>
 
 - --output
 - path to the output loss/accuracy plot
@@ -200,7 +200,7 @@ python convautoencoder_shallownet_cifar10.py
 python shallownet_cifar10.py
 ```
 <details>
-<summary>Optional Arguments</summary>
+<summary>Optional Arguments</summary><br>
 
   
 - --output
