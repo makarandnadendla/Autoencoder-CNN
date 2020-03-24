@@ -27,3 +27,15 @@ Mechanistic speculation of the algorithm, by itself, cannot lead to more objecti
  - Code Example
  - References
  - What's Next?
+ 
+ 
+ ```python
+python convautoencoder_cifar10.py
+```
+<details>
+<summary>Optional Arguments</summary>
+"--samples" "# number of samples to visualize when decoding"<br>
+"--image" "path to output image comparison file"<br>
+"--output" "path to output plot file"<br>
+"--weights" "path to best model weights file"
+</details>
