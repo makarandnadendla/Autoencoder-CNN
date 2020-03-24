@@ -151,7 +151,7 @@ python convautoencoder_cifar10.py
 <details>
 <summary>Outputs</summary>
 
-    
+<br>
 - Image Output Comparison -> output/plots/conveautoencoder/autoencoder_only_output.png
 - Training and Validation Loss Plot -> output/plots/conveautoencoder/autoencoder_only_plot.png
 - Best Model (Lowest Validation Loss) -> output/weights/conveautoencoder/convautoencoder_cifar10_best_weights.hdf5
@@ -180,12 +180,11 @@ python convautoencoder_minivggnet_cifar10.py
 - --autoencoder
 - path to best autoencoder model weights file
 - default = 'output/weights/conveautoencoder/convautoencoder_cifar10_best_weights.hdf5'
-<br>
+
 </details>
 <details>
 <summary>Outputs</summary>
- 
-    
+<br>
 - Classification Report -> output/plots/convautoencoder_minivggnet/cifar10_convautoencoder_minivggnet_classification_report
 - Confusion Matrix -> output/plots/convautoencoder_minivggnet/cifar10_convautoencoder_minivggnet_conf_matrix.png
 - Training and Validation Loss Plot -> output/plots/convautoencoder_minivggnet/cifar10_convautoencoder_minivggnet.png
