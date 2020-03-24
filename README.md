@@ -155,7 +155,7 @@ python convautoencoder_minivggnet_cifar10.py
 
 
 - --output
-- path to the output loss/accuracy plot
+- path to the output plot folder
 - default="output/plots/convautoencoder_minivggnet"
 <br>
 
@@ -179,7 +179,7 @@ python convautoencoder_shallownet_cifar10.py
 <summary>Optional Arguments</summary><br>
 
 - --output
-- path to the output loss/accuracy plot
+- path to the output plot folder
 - default="output/plots/convautoencoder_shallownet"
 <br>
 
@@ -204,7 +204,7 @@ python shallownet_cifar10.py
 
   
 - --output
-- path to the output loss/accuracy plot
+- path to the output plot folder
 - default= "output/plots/minivggnet"
 <br>
 
@@ -224,7 +224,7 @@ python shallownet_cifar10.py
 
     
 - --output
-- path to the output loss/accuracy plot
+- path to the output plot folder
 - default= "output/plots/shallownet"
 <br>
 
