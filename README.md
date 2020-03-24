@@ -215,12 +215,12 @@ python shallownet_cifar10.py
 </details>
 
 ### ShallowNet
-<br>
+
 ```python
 python shallownet_cifar10.py
 ```
 <details>
-<summary>Optional Arguments</summary>
+<summary>Optional Arguments</summary><br>
 
     
 - --output
