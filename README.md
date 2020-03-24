@@ -231,7 +231,7 @@ python convautoencoder_shallownet_cifar10.py
 ### MiniVGGNet
 
 ```python
-python shallownet_cifar10.py
+python minivggnet_cifar10.py
 ```
 <details>
 <summary>Optional Arguments</summary>
