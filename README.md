@@ -148,7 +148,6 @@ python convautoencoder_cifar10.py
 - default = 'output/weights/conveautoencoder/convautoencoder_cifar10_best_weights.hdf5'
 <br>
 </details>
-<br>
 <details>
 <summary>Outputs</summary>
 
@@ -183,7 +182,6 @@ python convautoencoder_minivggnet_cifar10.py
 - default = 'output/weights/conveautoencoder/convautoencoder_cifar10_best_weights.hdf5'
 <br>
 </details>
-<br>
 <details>
 <summary>Outputs</summary>
  
@@ -219,7 +217,6 @@ python convautoencoder_shallownet_cifar10.py
 - default = 'output/weights/conveautoencoder/convautoencoder_cifar10_best_weights.hdf5'
 <br>
 </details>
-<br>
 <details>
 <summary>Outputs</summary>
  
@@ -250,7 +247,6 @@ python shallownet_cifar10.py
 - default = 'output/weights/minivggnet/minivggnet_cifar10_best_weights.hdf5'
 <br>
 </details>
-<br>
 <details>
 <summary>Outputs</summary>
  
@@ -281,7 +277,6 @@ python shallownet_cifar10.py
 - default = 'output/weights/shallownet/shallownet_cifar10_best_weights.hdf5'
 <br>
 </details>
-<br>
 <details>
 <summary>Outputs</summary>
  
