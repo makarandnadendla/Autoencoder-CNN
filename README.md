@@ -126,7 +126,7 @@ python convautoencoder_cifar10.py
 ```
 <details>
 <summary>Optional Arguments</summary>
-
+<br>
 
 - --samples
 - number of samples to visualize when decoding, 
@@ -150,8 +150,8 @@ python convautoencoder_cifar10.py
 </details>
 <details>
 <summary>Outputs</summary>
-
 <br>
+
 - Image Output Comparison -> output/plots/conveautoencoder/autoencoder_only_output.png
 - Training and Validation Loss Plot -> output/plots/conveautoencoder/autoencoder_only_plot.png
 - Best Model (Lowest Validation Loss) -> output/weights/conveautoencoder/convautoencoder_cifar10_best_weights.hdf5
@@ -165,7 +165,7 @@ python convautoencoder_minivggnet_cifar10.py
 ```
 <details>
 <summary>Optional Arguments</summary>
-
+<br>
 
 - --output
 - path to the output plot folder
@@ -185,6 +185,7 @@ python convautoencoder_minivggnet_cifar10.py
 <details>
 <summary>Outputs</summary>
 <br>
+    
 - Classification Report -> output/plots/convautoencoder_minivggnet/cifar10_convautoencoder_minivggnet_classification_report
 - Confusion Matrix -> output/plots/convautoencoder_minivggnet/cifar10_convautoencoder_minivggnet_conf_matrix.png
 - Training and Validation Loss Plot -> output/plots/convautoencoder_minivggnet/cifar10_convautoencoder_minivggnet.png
@@ -199,7 +200,7 @@ python convautoencoder_shallownet_cifar10.py
 ```
 <details>
 <summary>Optional Arguments</summary>
-
+<br>
 
 - --output
 - path to the output plot folder
@@ -214,11 +215,11 @@ python convautoencoder_shallownet_cifar10.py
 - --autoencoder
 - path to best autoencoder model weights file
 - default = 'output/weights/conveautoencoder/convautoencoder_cifar10_best_weights.hdf5'
-<br>
+
 </details>
 <details>
 <summary>Outputs</summary>
- 
+<br>
     
 - Classification Report -> output/plots/convautoencoder_shallownet/cifar10_convautoencoder_shallownet_classification_report
 - Confusion Matrix -> output/plots/convautoencoder_shallownet/cifar10_convautoencoder_shallownet_conf_matrix.png
@@ -234,7 +235,7 @@ python minivggnet_cifar10.py
 ```
 <details>
 <summary>Optional Arguments</summary>
-
+<br>
   
 - --output
 - path to the output plot folder
@@ -244,11 +245,11 @@ python minivggnet_cifar10.py
 - --weights
 - path to best model weights file
 - default = 'output/weights/minivggnet/minivggnet_cifar10_best_weights.hdf5'
-<br>
+
 </details>
 <details>
 <summary>Outputs</summary>
- 
+<br>
     
 - Classification Report -> output/plots/minivggnet/cifar10_minivggnet_classification_report
 - Confusion Matrix -> output/plots/minivggnet/cifar10_minivggnet_conf_matrix.png
@@ -264,7 +265,7 @@ python shallownet_cifar10.py
 ```
 <details>
 <summary>Optional Arguments</summary>
-
+<br>
     
 - --output
 - path to the output plot folder
@@ -274,11 +275,11 @@ python shallownet_cifar10.py
 - --weights
 - path to best model weights file
 - default = 'output/weights/shallownet/shallownet_cifar10_best_weights.hdf5'
-<br>
+
 </details>
 <details>
 <summary>Outputs</summary>
- 
+<br>
     
 - Classification Report -> output/plots/shallownet/cifar10_shallownet_classification_report
 - Confusion Matrix -> output/plots/shallownet/cifar10_shallownet_conf_matrix.png
