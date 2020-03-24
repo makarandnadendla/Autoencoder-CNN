@@ -178,7 +178,6 @@ python convautoencoder_shallownet_cifar10.py
 <details>
 <summary>Optional Arguments</summary>
 
-
 - --output
 - path to the output loss/accuracy plot
 - default="output/plots/convautoencoder_shallownet"
@@ -216,7 +215,7 @@ python shallownet_cifar10.py
 </details>
 
 ### ShallowNet
-
+<br>
 ```python
 python shallownet_cifar10.py
 ```
