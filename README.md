@@ -123,9 +123,22 @@ python convautoencoder_cifar10.py
 <details>
 <summary>Optional Arguments</summary>
 
-- --samples, 
-- number of samples to visualize when decoding, 
-- default:8
+├───
+├───
+└───
+
+├─── --samples,
+├─── number of samples to visualize when decoding,
+└─── default:8 
+
+├───
+├───
+└───
+
+├───
+├───
+└───
+
 <br>
     
 - --image
@@ -151,7 +164,7 @@ python convautoencoder_minivggnet_cifar10.py
 ```
 <details>
 <summary>Optional Arguments</summary>
-
+<br>
 - --output
 - path to the output loss/accuracy plot
 - default="output/plots/convautoencoder_minivggnet"
