@@ -44,30 +44,30 @@ In the case of the Convolutional Autoencoder, we'll be testing it's ability to r
 ## Requirements
 
  The relevant libraries are listed below: and their versions are listed below. I used a conda virtual environment to run this project, so all the installation instructions will be presumed to be in a conda environment.
-    - conda 4.8.3
-    - conda-build 3.18.8
-    - python 3.7.6
-    - tensorflow-gpu 2.1 (tensorflow 2.1 should also work here just fine)
-    - matplotlib 3.1.3
-    - numpy 1.18.1    
-    - pandas 1.02
-    - scikit-learn 0.21.3
-    - argparse 1.3.0 
-    - opencv 4.2.0
-    - seaborn 0.10.0
+- conda 4.8.3
+- conda-build 3.18.8
+- python 3.7.6
+- tensorflow-gpu 2.1 (tensorflow 2.1 should also work here just fine)
+- matplotlib 3.1.3
+- numpy 1.18.1    
+- pandas 1.02
+- scikit-learn 0.21.3
+- argparse 1.3.0 
+- opencv 4.2.0
+- seaborn 0.10.0
 
 You can install Anaconda from https://www.anaconda.com/distribution/, and then run the following commands:
     
 ```python
-conda install -c conda-forge python 
-conda install -c anaconda tensorflow 
-conda install -c conda-forge matplotlib 
-conda install -c conda-forge numpy 
-conda install -c anaconda pandas
-conda install scikit-learn
-conda install -c anaconda argparse
-conda install -c conda-forge opencv 
-conda install -c anaconda seaborn 
+conda install -c conda-forge python=3.7.6
+conda install -c anaconda tensorflow=2.1
+conda install -c conda-forge matplotlib=3.1.3 
+conda install -c conda-forge numpy=1.18.1
+conda install -c anaconda pandas=1.02
+conda install scikit-learn=0.21,3
+conda install -c anaconda argparse=1.3.0
+conda install -c conda-forge opencv=4.2.0
+conda install -c anaconda seaborn=0.10.0
 ```
  
  ## Directory Structure
