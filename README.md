@@ -146,7 +146,7 @@ python convautoencoder_cifar10.py
 - --weights
 - path to best model weights file
 - default = 'output/weights/conveautoencoder/convautoencoder_cifar10_best_weights.hdf5'
-<br>
+
 </details>
 <details>
 <summary>Outputs</summary>
