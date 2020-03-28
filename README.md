@@ -186,7 +186,7 @@ python convautoencoder_minivggnet_cifar10.py
 <summary>Outputs</summary>
 <br>
     
-- Classification Report -> output/plots/convautoencoder_minivggnet/cifar10_convautoencoder_minivggnet_classification_report
+- Classification Report -> output/plots/convautoencoder_minivggnet/cifar10_convautoencoder_minivggnet_classification_report.png
 - Confusion Matrix -> output/plots/convautoencoder_minivggnet/cifar10_convautoencoder_minivggnet_conf_matrix.png
 - Training and Validation Loss Plot -> output/plots/convautoencoder_minivggnet/cifar10_convautoencoder_minivggnet.png
 - Best Model (Lowest Validation Loss) -> output/weights/convautoencoder_minivggnet/convautoencoder_minivggnet_cifar10_best_weights.hdf5
@@ -221,7 +221,7 @@ python convautoencoder_shallownet_cifar10.py
 <summary>Outputs</summary>
 <br>
     
-- Classification Report -> output/plots/convautoencoder_shallownet/cifar10_convautoencoder_shallownet_classification_report
+- Classification Report -> output/plots/convautoencoder_shallownet/cifar10_convautoencoder_shallownet_classification_report.png
 - Confusion Matrix -> output/plots/convautoencoder_shallownet/cifar10_convautoencoder_shallownet_conf_matrix.png
 - Training and Validation Loss Plot -> output/plots/convautoencoder_shallownet/cifar10_convautoencoder_shallownet.png
 - Best Model (Lowest Validation Loss) -> output/weights/convautoencoder_shallownet/convautoencoder_shallownet_cifar10_best_weights.hdf5
@@ -251,7 +251,7 @@ python minivggnet_cifar10.py
 <summary>Outputs</summary>
 <br>
     
-- Classification Report -> output/plots/minivggnet/cifar10_minivggnet_classification_report
+- Classification Report -> output/plots/minivggnet/cifar10_minivggnet_classification_report.png
 - Confusion Matrix -> output/plots/minivggnet/cifar10_minivggnet_conf_matrix.png
 - Training and Validation Loss Plot -> output/plots/minivggnet/cifar10_minivggnet.png
 - Best Model (Lowest Validation Loss) -> output/weights/minivggnet/minivggnet_cifar10_best_weights.hdf5
@@ -281,7 +281,7 @@ python shallownet_cifar10.py
 <summary>Outputs</summary>
 <br>
     
-- Classification Report -> output/plots/shallownet/cifar10_shallownet_classification_report
+- Classification Report -> output/plots/shallownet/cifar10_shallownet_classification_report.png
 - Confusion Matrix -> output/plots/shallownet/cifar10_shallownet_conf_matrix.png
 - Training and Validation Loss Plot -> output/plots/shallownet/cifar10_shallownet.png
 - Best Model (Lowest Validation Loss) -> output/weights/shallownet/shallownet_cifar10_best_weights.hdf5
