@@ -7,25 +7,23 @@ matplotlib.use("Agg")
 
 # import the necessary packages
 from sklearn.preprocessing import LabelBinarizer
-from sklearn.metrics import classification_report, confusion_matrix, precision_recall_fscore_support
 from modelcollection.nn.conv import MiniVGGNet
 from modelcollection.preprocessing import CifarDataPreprocessing
-from modelcollection.plot import PlotCm
+from modelcollection.plot import PlotCm, PlotCr
 from modelcollection.callbacks import TrainingMonitor
 from tensorflow.keras.optimizers import SGD
 from tensorflow.keras.datasets import cifar10
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import ModelCheckpoint
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
 import argparse
-import os
+import os 
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-o", "--output", type = str, default = 'output/plots/minivggnet',
-	help="path to the output loss/accuracy plot")
+	help="path to the output plot folder")
 ap.add_argument("-w", "--weights",type = str, default = 'output/weights/minivggnet/minivggnet_cifar10_best_weights.hdf5',
 	help="path to best model weights file")
 args = vars(ap.parse_args())
@@ -69,7 +67,7 @@ model.compile(loss="categorical_crossentropy", optimizer=opt,
 
 # construct the callback to save only the *best* model to disk
 # based on the validation loss
-figPath = os.path.sep.join([args["output"], "{}.png".format(os.getpid())])
+figPath = os.path.sep.join([args["output"], "cifar10_minivggnet.png"])
 checkpoint = ModelCheckpoint(args["weights"], monitor="val_loss",
 	save_best_only=True, verbose=1)
 callbacks = [TrainingMonitor(figPath), checkpoint]
@@ -83,14 +81,8 @@ H = model.fit(aug.flow(trainX, trainY, batch_size=batchSize),
 # evaluate the network
 print("[INFO] evaluating network...")
 predictions = model.predict(testX, batch_size=batchSize)
-class_report = classification_report(testY.argmax(axis=1), predictions.argmax(axis=1), target_names=labelNames, output_dict = True)
-results_pd = pd.DataFrame(class_report)
-results_pd.loc['precision','accuracy'] = ''
-results_pd.loc['recall','accuracy'] = ''
-results_pd.loc['support','accuracy'] = sum(results_pd.loc['support','airplane':'truck'])
-results_pd = results_pd.transpose()
-results_pd.to_csv(os.path.sep.join([args["output"], "cifar10_minivggnet_classification_report.csv"]))
-PlotCm(testY.argmax(axis = 1), predictions.argmax(axis=1), target_names=labelNames, output_path = os.path.sep.join([args["output"], "cifar10_minivggnet_conf_matrix.png"]))
+PlotCr(testY, predictions, target_names=labelNames, output_path = os.path.sep.join([args["output"], "cifar10_minivggnet_classification_report.png"]))
+PlotCm(testY, predictions, target_names=labelNames, output_path = os.path.sep.join([args["output"], "cifar10_minivggnet_conf_matrix.png"]))
 
 # plot the training loss and accuracy
 plt.style.use("ggplot")

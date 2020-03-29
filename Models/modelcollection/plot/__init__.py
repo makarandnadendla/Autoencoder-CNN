@@ -1,2 +1,2 @@
 # import the necessary packages
-from .plot_cm import PlotCm
+from .plot_performance import PlotCm, PlotCr

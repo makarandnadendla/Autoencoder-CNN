@@ -14,7 +14,6 @@ from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.callbacks import ModelCheckpoint
 import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
 import argparse
 import cv2
 import os 
