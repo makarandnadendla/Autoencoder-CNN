@@ -119,7 +119,7 @@ All model outputs will be created in the default folders unless otherwise specif
 
 ### Convolutional Autoencoder
 
-This test should be run first, as we are training the autoencoder separately from the rest of the CNN model. Therefore, to run the Autoencoder + CNN models we need an existing autoencoder model file to exist.
+This test should be run first, as we are training the autoencoder separately from the rest of the CNN model. Therefore, to run the Autoencoder + CNN models we need an existing autoencoder model file beforehand.
 
 ```python
 python convautoencoder_cifar10.py
