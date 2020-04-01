@@ -33,13 +33,13 @@ Mechanistic speculation of the algorithm, by itself, cannot lead to more objecti
 
 We'll be exploring 5 different models and their performance on CIFAR-10 in this project:
     
- - Convolutional Autoencoder 
+ - Autoencoder 
  - MiniVGGNet
  - ShallowNet
  - Encoder + MiniVGGNet
  - Encoder + ShallowNet
     
-In the case of the Convolutional Autoencoder, we'll be testing it's ability to recreate images from the CIFAR-10 dataset, and based on those results we'll use the encoder layers as inputs for both MiniVGGNet and ShallowNet. For the rest, we'll be evaluating the model on their ability to correctly classify images in our test set.
+In the case of the Autoencoder, we'll be testing it's ability to recreate images from the CIFAR-10 dataset, and based on those results we'll use the encoder layers as inputs for both MiniVGGNet and ShallowNet. For the rest, we'll be evaluating the model on their ability to correctly classify images in our test set.
     
 ## Requirements
 
@@ -117,7 +117,7 @@ Each of the respective models' classes are in Models/modelcollection/nn/conv if 
 
 All model outputs will be created in the default folders unless otherwise specified by command line arguments.
 
-### Convolutional Autoencoder
+### Autoencoder
 
 This test should be run first, as we are training the autoencoder separately from the rest of the CNN model. Therefore, to run the Autoencoder + CNN models we need an existing autoencoder model file beforehand.
 
@@ -158,7 +158,7 @@ python convautoencoder_cifar10.py
     
 </details>
 
-### Convolutional Autoencoder + MiniVGGNet
+### Autoencoder + MiniVGGNet
 
 ```python
 python convautoencoder_minivggnet_cifar10.py
@@ -193,7 +193,7 @@ python convautoencoder_minivggnet_cifar10.py
     
 </details>
 
-### Convolutional Autoencoder + ShallowNet
+### Autoencoder + ShallowNet
 
 ```python
 python convautoencoder_shallownet_cifar10.py
