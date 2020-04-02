@@ -89,7 +89,7 @@ C:.
     │   │        │   convautoencoder_minivggnet.py
     │   │        │   convautoencoder_shallownet.py
     │   │        │   minivggnet.py
-    │   │        └───shallownet.py 
+    │   │        │   shallownet.py 
     │   ├───plot
     │   └───preprocessing
     │
