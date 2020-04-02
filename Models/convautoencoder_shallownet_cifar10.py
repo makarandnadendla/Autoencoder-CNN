@@ -75,13 +75,13 @@ callbacks = [TrainingMonitor(figPath), checkpoint]
 # train the network
 print("[INFO] training network...")
 H = model.fit(aug.flow(trainX, trainY, batch_size=batchSize),
-	validation_data=(testX, testY),
+	validation_data=(testX, testY), steps_per_epoch=len(trainX) // batchSize,
 	callbacks = callbacks, epochs=epochs, verbose=1)
 
 # evaluate the network
 print("[INFO] evaluating network...")
 predictions = model.predict(testX, batch_size=batchSize)
-PlotCr(testY, predictions, target_names=labelNames, output_path = os.path.sep.join([args["output"], "cifar10_convautoencoder_shallownet_classification_report.png"]))
+PlotCr(testY, predictions, target_nmes=labelNames, output_path = os.path.sep.join([args["output"], "cifar10_convautoencoder_shallownet_classification_report.png"]))
 PlotCm(testY, predictions, target_names=labelNames, output_path = os.path.sep.join([args["output"], "cifar10_convautoencoder_shallownet_conf_matrix.png"]))
 
 # plot the training loss and accuracy

@@ -22,11 +22,11 @@ import os
 ap = argparse.ArgumentParser()
 ap.add_argument("-s", "--samples", type=int, default=8,
 	help="# number of samples to visualize when decoding")
-ap.add_argument("-i", "--image", type=str, default="output/plots/conveautoencoder/autoencoder_only_output.png",
+ap.add_argument("-i", "--image", type=str, default="output/plots/convautoencoder/autoencoder_only_output.png",
 	help="path to output image comparison file")
-ap.add_argument("-o", "--output", type=str, default="output/plots/conveautoencoder/autoencoder_only_plot.png",
+ap.add_argument("-o", "--output", type=str, default="output/plots/convautoencoder/autoencoder_only_plot.png",
 	help="path to output plot file")
-ap.add_argument("-w", "--weights",type = str, default = 'output/weights/conveautoencoder/convautoencoder_cifar10_best_weights.hdf5',
+ap.add_argument("-w", "--weights",type = str, default = 'output/weights/convautoencoder/convautoencoder_cifar10_best_weights.hdf5',
 	help="path to best model weights file")
 args = vars(ap.parse_args())
 

@@ -49,43 +49,6 @@ class ConvAutoencoder:
 		# build the decoder model
 		decoder = Model(decoderInputs, x, name = "decoder")
 
-		# loop over the number of filters
-		#for f in filters:
-			# apply a CONV => RELU => BN operation
-		#	x = Conv2D(f, (3, 3), strides=2, padding="same")(x)
-		#	x = LeakyReLU(alpha=0.2)(x)
-		#	x = BatchNormalization(axis=chanDim)(x)
-
-		# flatten the network and then construct our latent vector
-		#volumeSize = K.int_shape(x)
-		#x = Flatten()(x)
-		#latent = Dense(latentDim)(x)
-
-
-		# start building the decoder model which will accept the
-		# output of the encoder as its inputs
-		#latentInputs = Input(shape=(latentDim,))
-		#x = Dense(np.prod(volumeSize[1:]))(latentInputs)
-		#x = Reshape((volumeSize[1], volumeSize[2], volumeSize[3]))(x)
-
-		# loop over our number of filters again, but this time in
-		# reverse order
-		#latentInputs = Input(shape = volumeSize)
-		#for f in filters[::-1]:
-			# apply a CONV_TRANSPOSE => RELU => BN operation
-		#	x = Conv2DTranspose(f, (3, 3), strides=2,
-		#		padding="same")(x)
-		#	x = LeakyReLU(alpha=0.2)(x)
-		#	x = BatchNormalization(axis=chanDim)(x)
-
-		# apply a single CONV_TRANSPOSE layer used to recover the
-		# original depth of the image
-		#x = Conv2DTranspose(depth, (3, 3), padding="same")(x)
-		#outputs = Activation("sigmoid")(x)
-
-		# build the decoder model
-#		decoder = Model(latentInputs, outputs, name="decoder")
-
 		# our autoencoder is the encoder + decoder
 		autoencoder = Model(encoderInputs, decoder(encoder(encoderInputs)),
 			name="autoencoder")

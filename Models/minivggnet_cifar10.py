@@ -32,7 +32,7 @@ args = vars(ap.parse_args())
 print("[INFO process ID: {}".format(os.getpid()))
 
 #Set epochs and batch num
-epochs = 200
+epochs = 150
 batchSize = 64
 
 # load the training and testing data, reduce bird, deer and truck to 50%
@@ -91,7 +91,7 @@ plt.plot(np.arange(0, epochs), H.history["loss"], label="train_loss")
 plt.plot(np.arange(0, epochs), H.history["val_loss"], label="val_loss")
 plt.plot(np.arange(0, epochs), H.history["accuracy"], label="train_acc")
 plt.plot(np.arange(0, epochs), H.history["val_accuracy"], label="val_acc")
-plt.title("Training Loss and Accuracy on CIFAR-10")
+plt.title("Training Loss and Accuracy")
 plt.xlabel("Epoch #")
 plt.ylabel("Loss/Accuracy")
 plt.legend()
