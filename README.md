@@ -108,7 +108,7 @@ C:.
             └───shallownet
 ```
 
-The main scripts are in the Models folder, with each of the models having it's own script. 
+The main scripts are in the Models folder, with each of the models having their own script. 
 
 Each of the respective models' classes are in Models/modelcollection/nn/conv if you need to take a look at or alter the structure of the networks.
  
@@ -130,17 +130,17 @@ python convautoencoder_cifar10.py
 
 - --samples
 - number of samples to visualize when decoding, 
-- default:8
+- default: 8
 <br>
     
 - --image
 - path to output image comparison file 
-- default="output/plots/conveautoencoder/autoencoder_only_output.png"
+- default = "output/plots/conveautoencoder/autoencoder_only_output.png"
 <br>
 
 - --output
 - path to output plot file
-- default="output/plots/conveautoencoder/autoencoder_only_plot.png"
+- default = "output/plots/conveautoencoder/autoencoder_only_plot.png"
 <br>
 
 - --weights
@@ -169,7 +169,7 @@ python convautoencoder_minivggnet_cifar10.py
 
 - --output
 - path to the output plot folder
-- default="output/plots/convautoencoder_minivggnet"
+- default = "output/plots/convautoencoder_minivggnet"
 <br>
 
 - --weights
@@ -204,7 +204,7 @@ python convautoencoder_shallownet_cifar10.py
 
 - --output
 - path to the output plot folder
-- default="output/plots/convautoencoder_shallownet"
+- default = "output/plots/convautoencoder_shallownet"
 <br>
 
 - --weights
@@ -239,7 +239,7 @@ python minivggnet_cifar10.py
   
 - --output
 - path to the output plot folder
-- default= "output/plots/minivggnet"
+- default = "output/plots/minivggnet"
 <br>
 
 - --weights
@@ -269,7 +269,7 @@ python shallownet_cifar10.py
     
 - --output
 - path to the output plot folder
-- default= "output/plots/shallownet"
+- default = "output/plots/shallownet"
 <br>
 
 - --weights
