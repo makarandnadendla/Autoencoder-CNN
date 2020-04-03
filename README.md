@@ -4,7 +4,7 @@ The aim of this project is to evaluate a simple hypothesis:
     
 "Can an Autoencoder + Convolutional Neural Network approach perform better than a simple Convolutional Neural Network classifier?"
 
-Autoencoders are neural networks that traditionally look to encode raw pixel data into a few nodes of a hidden layer, and then decode, or reconstruct the image from that 'compression'     
+Autoencoders are neural networks that traditionally look to encode raw pixel data into a few nodes of a hidden layer, and then decode, or reconstruct the image from that 'compression'.    
 
 The idea behind the hypothesis is that, the autoencoder might learn to emphasize key distinguishing features when it is trained. Therefore, if we use the encoded representation of the image as input to our CNN, we might achieve better results than if we used the raw image pixel data as input. 
     
@@ -12,7 +12,7 @@ The idea behind the hypothesis is that, the autoencoder might learn to emphasize
 
 The motivation behind this project, was simply to explore what autoencoders can and cannot provide to other algorithms and evaluate their usefulness in deepening any particular algorithm. 
     
-Autoencoders are a popular algorithm for beginner deep learning practitioners because the idea is easy to understand, and it has a aesthetic appeal to it where doing something so simple might yield benefits to a classification algorithm in question. 
+Autoencoders are a popular concept for beginner deep learning practitioners because the idea is easy to understand, and it has a aesthetic appeal to it wherein doing something so simple might yield benefits to a classification algorithm in question. 
     
 However, as with any other hypothesis, we must evaluate it without bias, using the most relevant performance metrics (precision, accuracy, f-score, confusion matrix) in proper context to determine the efficacy. 
 
@@ -29,7 +29,7 @@ Mechanistic speculation of the algorithm, by itself, cannot lead to more objecti
  - References
  - What's Next?
  
- ## Overview
+## Overview
 
 We'll be exploring 5 different models and their performance on CIFAR-10 in this project:
     
@@ -40,10 +40,12 @@ We'll be exploring 5 different models and their performance on CIFAR-10 in this 
  - Encoder + ShallowNet
     
 In the case of the Autoencoder, we'll be testing it's ability to recreate images from the CIFAR-10 dataset, and based on those results we'll use the encoder layers as inputs for both MiniVGGNet and ShallowNet. For the rest, we'll be evaluating the model on their ability to correctly classify images in our test set.
+
+The in-depth report is named "Ridge-i Report.ipynb" in the parent directory.
     
 ## Requirements
 
- The relevant libraries are listed below: and their versions are listed below. I used a conda virtual environment to run this project, so all the installation instructions will be presumed to be in a conda environment.
+ The relevant libraries are listed below: and their versions are listed below. A conda virtual environment was used to run this project, so all the installation instructions will be presumed to be in a conda environment.
 - conda 4.8.3
 - conda-build 3.18.8
 - python 3.7.6
@@ -56,7 +58,7 @@ In the case of the Autoencoder, we'll be testing it's ability to recreate images
 - opencv 4.2.0
 - seaborn 0.10.0
 
-You can install Anaconda from https://www.anaconda.com/distribution/, and then run the following commands:
+Anaconda can be installed from https://www.anaconda.com/distribution/, and then the following commands can be run from Anaconda Prompt:
     
 ```python
 conda install -c conda-forge python=3.7.6
@@ -116,6 +118,8 @@ Each of the respective models' classes are in Models/modelcollection/nn/conv if 
 ## Tests 
 
 All model outputs will be created in the default folders unless otherwise specified by command line arguments.
+
+Click on the buttons to view optional arguments and outputs.
 
 ### Autoencoder
 
