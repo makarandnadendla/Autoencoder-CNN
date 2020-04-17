@@ -41,7 +41,7 @@ We'll be exploring 5 different models and their performance on CIFAR-10 in this 
     
 In the case of the Autoencoder, we'll be testing it's ability to recreate images from the CIFAR-10 dataset, and based on those results we'll use the encoder layers as inputs for both MiniVGGNet and ShallowNet. For the rest, we'll be evaluating the model on their ability to correctly classify images in our test set.
 
-The in-depth report is named "Report.ipynb" in the parent directory.
+The in-depth report is named "Report.ipynb" in the parent directory (TO BE ADDED).
     
 ## Requirements
 
